@@ -4,9 +4,9 @@
     <div class="jumbotron">
       <h4><u>Detalle de usuarios</u></h4>
       <hr>
-      <button class="btn btn-light mx-6" @click=getUsuariosCb()>Usuarios XMLHttpRequest</button>
-      <button class="btn btn-success mr-6" @click=getUsuariosFetch()>Usuarios Fetch</button>
-      <button class="btn btn-dark mr-6" @click=getUsuariosAxios()>Usuarios Axios</button>
+      <button class="btn btn-light mr-6" @click="getUsuariosCb()">Usuarios XMLHttpRequest</button>
+      <button class="btn btn-success mr-6" @click="getUsuariosFetch()">Usuarios Fetch</button>
+      <button class="btn btn-dark mr-6" @click="getUsuariosAxios()">Usuarios Axios</button>
       <hr>
       <div v-if="usuarios.length" class="table-responsive">
         <table class="table table-bordered">
